@@ -23,3 +23,35 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+// hire me alret box and text call action
+let innovation_var = "Sorry i was busy in idea validation of New innovative train service app idea validation!"
+let research_stdy = "Sorry i was busy in research study PROJECT PLASTIC research study!"
+let strategy_devp = "Sorry i was busy in strategy development Large scale vegetable vendor business"
+let automation_incop = "Sorry i was busy in development of automated systems for cleaning the solar panels"
+
+function hireMe(action) {
+	const alertMessage = document.getElementById('alertMessage');
+	if(action === "ideaValidation"){
+		alertMessage.textContent = innovation_var;
+	}
+	else if(action === "reseachstdy"){
+		alertMessage.textContent = research_stdy;
+	}
+	else if(action === "strgydevop"){
+		alertMessage.textContent = strategy_devp;
+	}
+	else if(action === "autoIncop"){
+		alertMessage.textContent = automation_incop;
+	}
+
+	
+	const customAlert = document.getElementById('customAlert');
+	customAlert.style.display = 'flex'; // Show the alert
+  }
+  
+  function closeAlert() {
+	const customAlert = document.getElementById('customAlert');
+	customAlert.style.display = 'none'; // Hide the alert
+  }
+  

@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
+  <title>P V Ramana</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./img/favicon_of_R.png">
 </head>
 
 <body>
@@ -58,7 +62,15 @@
           of services including innovation, research study , startegies to 
           develop your business. Good at problem solving in wide range aspects
           from day-to-day life to industrial scale. I really love to solve the 
-          enviromental problems i was very happy and ethusiatic to those kind problems!</p>
+          enviromental problems i was very happy and ethusiatic to those kind problems!
+          </p>
+      <!-- Custom Alert Dialog -->
+      <div id="customAlert" class="alert" style="display:none;">
+        <div class="alert-content">
+            <span id="alertMessage"></span>
+            <button onclick="closeAlert()">OK</button>
+          </div>
+        </div>  
       </div>
       <div class="service-bottom">
         <div class="service-item">
@@ -68,14 +80,16 @@
             guidance and help you to develop your idea. so that it is ready to pitching and prototype
             developing.
           </p>
+          <a id="hireMeLink" onclick="hireMe('ideaValidation')">Hire Me</a>
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
           <h2>Research study</h2>
           <p>If you are struggling and stucked in your research study and can't able move forward in 
             that work. I will give you a clear way, suggestion and some tools to progress in your 
-            research study with 10x speed.
+            research study with 10x speed.                                                
           </p>
+          <a id="hireMeLink" onclick="hireMe('reseachstdy')">Hire Me</a>
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
@@ -84,6 +98,7 @@
             marketing and can't able to make enough profits and becomes difficult to reach your 
             target audience. I will provide a startegic to way to reach your audience.
           </p>
+          <a id="hireMeLink" onclick="hireMe('strgydevop')">Hire Me</a>
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
@@ -93,6 +108,7 @@
             and help you to reduce the cost of production and with some tools , AI and innovative 
             approaches. 
           </p>
+          <a id="hireMeLink" onclick="hireMe('autoIncop')">Hire Me</a>
         </div>
       </div>
     </div>
@@ -110,10 +126,10 @@
           <div class="project-info">
             <h1>Project 1</h1>
             <h2>Project Plastic</h2>
-            <p>It is a comprehensive Research Project where studied in depth insights of 
-              Plastivorus insects specifically Galleria mellonella. I was practically 
-              witnessed how it was eating the thermacol and recorded some video proofs.
+            <p>PROJECT PLASTIC, initiated by students at Agriculture College, Bapatla, focuses on sustainable solutions for plastic degradation. By studying waxworms and their plastic-degrading enzymes, the team explores genetic engineering to enhance large-scale enzyme production. With over 60 members, the project combines innovation and collaboration to address plastic pollution and promote environmental sustainability.
             </p>
+          <a id="hireMeLink" href="https://medium.com/@P_V_Ramana/project-plastic-pioneering-sustainable-solutions-for-plastic-degradation-c2d0c0888ac5" >Read More</a>
+
           </div>
           <div class="project-img">
             <img src="./img/3.jpg" alt="img">
@@ -123,11 +139,10 @@
           <div class="project-info">
             <h1>Project 2</h1>
             <h2>Stock price prediction bot</h2>
-            <p>This is a Bot it predicts the price of stocks based on the technical indicators 
-              and it takes the price data from the free data provider and by bot connect with 
-              those API's in real time and then simulates the paper money and by that we check 
-              performance of that bot.
+            <p>I developed an AI-powered Stock Price Prediction Bot focused on agricultural commodities. It uses real-time data, technical indicators, and machine learning models to predict price trends and generate buy/sell signals. With features like paper money trading and Python libraries (TA-Lib, scikit-learn), the bot provides a strategic edge for traders. Soon, a basic version will be available on GitHub.
             </p>
+          <a id="hireMeLink" href="https://medium.com/@P_V_Ramana/stock-price-prediction-bot-revolutionizing-agricultural-commodities-trading-with-ai-806f2066e711" >Read More</a>
+
           </div>
           <div class="project-img">
             <img src="./img/2.jpg" alt="img">
@@ -137,11 +152,10 @@
           <div class="project-info">
             <h1>Project 3</h1>
             <h2>Agricutural experiment</h2>
-            <p>In my experimental project with my dad, I successfully achieved control over the fruit borer
-              in brinjal using organic methods.The primary techniques involved CVR method and neem oil spray,
-              applied in sync with the movements of the moon. Additionally, we used a important preparation 
-              that significantly enhanced the taste of the brinjals.
+            <p>My father and I developed an organic method, using the CVR (Chintala Venkata Reddy) technique, to control fruit borers effectively. By spraying a turbid solution of deep soil and water, the pests are naturally neutralized, improving crop quality and growth. This experience ignited my passion for sustainable farming, inspiring innovative solutions for small-scale farmers.
             </p>
+          <a id="hireMeLink" href="https://medium.com/@P_V_Ramana/innovative-organic-farming-controlling-fruit-borer-using-the-cvr-method-d84ec3c665bc" >Read More</a>
+
           </div>
           <div class="project-img">
             <img src="./img/1.jpg" alt="img">
@@ -151,10 +165,10 @@
           <div class="project-info">
             <h1>Project 4</h1>
             <h2>Fast Memorizing tool</h2>
-            <p>It is a tool based on psychological concepts mainly the "Forgeting Curve Pattern", it is 
-              used to increase the retention of the verbal information like the Multiple Choice Questions
-              and Bits.
+            <p>I developed an app that helps students prepare smarter for exams by leveraging neuroscience principles like the Forgetting Curve and Pareto’s Principle. The app uses AI and machine learning to personalize study plans, focusing on weak areas and high-value topics. It optimizes revision, boosts memory retention, and revolutionizes exam preparation for better results in less time.
             </p>
+          <a id="hireMeLink" href="https://medium.com/@P_V_Ramana/fast-memorizing-tools-app-going-beyond-human-cognitive-capabilites-f52c1c0581e9" >Read More</a>
+
           </div>
           <div class="project-img">
             <img src="./img/4.jpg" alt="img">
@@ -196,7 +210,8 @@
           me to pursue solutions that are both effective and forward-thinking. Dedicated to 
           self-improvement and helping others. I balance a strong work ethic with a desire 
           to learn, adapt, and contribute positively to any field or project i was involved in.</p>
-        <a href="#" class="cta">Download Resume</a>
+          <a href="./my_resume.pdf" class="cta" download="PVRamana_Resume.pdf">Download Resume</a>
+
       </div>
     </div>
   </section>
@@ -221,7 +236,7 @@
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
           <div class="contact-info">
             <h1>Email</h1>
-            <h2>a.m.venkataramana@gmail</h2>
+            <h2>a.m.venkataramana@gmail.com</h2>
             <!--<h2>abcd@gmail.com</h2>-->
           </div>
         </div>
@@ -243,7 +258,7 @@
       <div class="brand">
         <h1><span>P</span>.<span>V</span>.<span>R</span>amana</h1>
       </div>
-      <h2>You will get complete sustainability in your Passion</h2>
+      <h2>You will get complete sustainability in your business</h2>
       <div class="social-icon">
         <div class="social-item">
           <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
